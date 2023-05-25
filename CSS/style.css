@@ -92,13 +92,6 @@ div.container {
     padding: 0 2%;
 }
 
-div#c1 {
-    /* background-color: aquamarine; */
-}
-
-div#c2 {
-/*     background-color: yellow; */
-}
 
 div#c3 {
     background-color: turquoise;
@@ -177,7 +170,7 @@ div.descricao{
 
 .line{
     width: 20%;
-    border-bottom: 4px solid #DA5F17;;
+    border-bottom: 4px solid #DA5F17;
     border-radius: 2px;
 }
 
