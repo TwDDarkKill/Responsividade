@@ -92,10 +92,6 @@ div.container {
     padding: 0 2%;
 }
 
-div#c5 {
-    background-color: blueviolet;
-}
-
 /* Estrututa */
 
 /* Primeira sessão */
@@ -141,7 +137,7 @@ div.s1-b1,
     width: 100%;
 }
 
-div.descricao{
+div.descricao {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -164,7 +160,7 @@ div.descricao{
     color: #DA5F17;
 }
 
-.line{
+.line {
     display: flex;
     width: 20%;
     border-bottom: 4px solid #DA5F17;
@@ -183,26 +179,28 @@ div.descricao{
     line-height: 26px;
     color: #000;
 }
+
 /* Final da segunda sessão */
 
 /* Inicio da terceira sessão */
 
-.s3-b1 img{
+.s3-b1 img {
     width: 100%;
 }
 
-.s3-b3 img{
+.s3-b3 img {
     width: 100%;
 }
 
-.s3-b1,.s3-b3{
+.s3-b1,
+.s3-b3 {
     display: flex;
     align-items: center;
     width: 15%;
     height: 80%;
 }
 
-.s3-b2{
+.s3-b2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +208,7 @@ div.descricao{
     height: 85%;
 }
 
-.s3-b2 a{
+.s3-b2 a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,10 +220,10 @@ div.descricao{
     border-radius: 10px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-.s3-b2 p{
+.s3-b2 p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,38 +234,166 @@ div.descricao{
 
 /* Inicio da quarta sessão */
 
-#s4{
+#s4 {
     background-color: #DA5F17;
 }
 
-div.s4-b1{
+div.s4-b1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 85%;
     height: 75%;
-    background-color: green;
+    background-color: #DA5F17;
 }
 
-div.s4-b1-blocos{
+div.s4-b1-blocos {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 22%;
     height: 80%;
-    background-color: aqua;
+    background-color: white;
 }
 
-div.s4-b1-blocos-b1,div.s4-b1-blocos-b3{
+div.s4-b1-blocos-b1,
+div.s4-b1-blocos-b3 {
     width: 100%;
     height: 35%;
-    background-color: red;
 }
 
-div.s4-b1-blocos-b2{
+.s4-b1-blocos-b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.s4-b1-blocos-b1 img {
     width: 100%;
+    height: 100%;
+}
+
+div.s4-b1-blocos-b2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 0;
+    width: 100%;
+    padding: 0 5%;
     height: 25%;
-    background-color: violet;
+}
+
+div.s4-b1-blocos-b2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10%;
+}
+
+.s4-line {
+    display: flex;
+    width: 90%;
+    border-bottom: 4px solid #DA5F17;
+    border-radius: 2px;
+}
+
+div.s4-b1-blocos-b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+div.s4-b1-blocos-b3 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
 }
 
 /* Final da quarta sessão */
+
+/* Inicio da quinta sessão */
+
+div.s5-b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+div.s5-b2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 80%;
+}
+
+.s5-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #DA5F17;
+}
+
+div.s5-b1-blocos-b2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+    height: 30%;
+    background: #FFFFFF;
+    border: 2px solid #DA5F17;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.s5-b1-blocos-b2-foto {
+    width: 20%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+div.s5-b1-blocos-b2-foto img {
+    width: 100%;
+    height: 100%;
+}
+
+div.s5-b1-blocos-b2-desc{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 75%;
+    justify-content: space-around;
+}
+
+.name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #DA5F17;
+}
+
+.desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
