@@ -33,9 +33,11 @@ header {
     width: 100vw;
     height: 10vh;
     background-color: white;
+    z-index: 999;
+    top: 0; /* Adicionado o valor "0" para fixar o cabeçalho no topo */
 }
 
-header>nav {
+header > nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,14 +46,14 @@ header>nav {
     height: 100%;
 }
 
-header>nav>div.logo {
+header > nav > div.logo {
     display: flex;
     align-items: center;
     width: 40%;
     height: 100%;
 }
 
-header>nav>ul {
+header > nav > ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -59,19 +61,20 @@ header>nav>ul {
     height: 100%;
 }
 
-header>nav>ul>li>a {
+header > nav > ul > li > a {
     color: black;
     font-size: 1.1em;
     font-weight: 500;
 }
 
-header>nav>div.logo a {
+header > nav > div.logo a {
     border: 3px solid #000000;
     padding: 0 10px;
     color: black;
     font-size: 1.4em;
     font-weight: 500;
 }
+
 
 /* Final da navbar */
 
@@ -81,6 +84,7 @@ section {
     align-items: end;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 div.container {
@@ -402,7 +406,6 @@ div.s5-b1-blocos-b2-desc {
 }
 
 div.creditos {
-    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
