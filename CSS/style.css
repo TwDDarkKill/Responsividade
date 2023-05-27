@@ -402,6 +402,7 @@ div.s5-b1-blocos-b2-desc {
 }
 
 div.creditos {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,7 +412,30 @@ div.creditos {
 }
 
 div.creditos p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-}
+    overflow: hidden; /* Esconder o texto que ainda não foi digitado */
+    white-space: nowrap; /* Impedir que o texto seja quebrado em várias linhas */
+    border-right: 0.15em solid #000; /* Adicionar uma borda como cursor de digitação */
+    animation: typing 4s steps(40, end), blink-caret 0.85s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 23%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+  
