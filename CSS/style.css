@@ -405,6 +405,11 @@ div.s5-b1-blocos-b2-desc {
     color: #000000;
 }
 
+div.cred-text{
+    width: fit-content;
+    height: fit-content;
+}
+
 div.creditos {
     display: flex;
     justify-content: center;
@@ -424,7 +429,7 @@ div.creditos {
   }
   
   div.creditos p.animated-text {
-    width: 100%;
+    width: max-content;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 8s steps(80, end) 4s forwards, blink-caret 0.85s step-end infinite;
@@ -435,7 +440,7 @@ div.creditos {
       width: 0;
     }
     to {
-      width: 23.4%;
+      width: 100%;
     }
   }
   
