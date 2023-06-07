@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="shortcut icon" href="IMG/favicon-32x32.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="IMG/favicon-32x32.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/524fdad106.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -17,131 +17,176 @@
 
 <body>
     <header>
+
         <nav>
             <div class="logo"><a href="#">WorkUs</a></div>
-            <ul>
+            
+            <ul id="menu">
                 <li><a href="#s3">Quem somos nós</a></li>
-                <li><a href="#s4">Vantagens do WorkUs</a></li>
+                <li><a href="#s4">Vantagens do Work Us</a></li>
                 <li><a href="#s5">Contatos</a></li>
             </ul>
-            <div class="nav-mobile">
-                <i class="fa fa-bars fa-2xl" style="color: #000000;"></i>
-            </div>
+
+            <a href="" class="botao-menu" onclick="ClickMenu()"><i class="fa-solid fa-bars"></i></a>
         </nav>
+
+        <script>
+            function ClickMenu() {
+                if (menu.style.display == 'none') {
+                    menu.style.display = 'block'
+                } else {
+                    menu.style.display = 'none'
+                }
+            }
+        </script>
+        
     </header>
-    <section id="s1">
-        <div class="container" id="c1">
-            <div class="s1-b1">
-                <p>Crie e gerencie seu fluxo de trabalho no home office com o WorkUs</p>
-                <a href="#">Crie sua conta grátis</a>
+
+    <main>
+
+        <section id="s1">
+            <div class="container" id="c1">
+                <div class="s1-b1">
+                    <p>Crie e gerencie seu fluxo de trabalho no home office com o WorkUs</p>
+                    <a href="#">Crie sua conta grátis</a>
+                </div>
+                <div class="s1-b2"><img src="IMG/bg 1.svg" alt=""></div>
             </div>
-            <div class="s1-b2"><img src="IMG/bg 1.svg" alt=""></div>
-        </div>
-    </section>
-    <section id="s2">
-        <div class="container" id="c2">
-            <div class="s2-b2" style="padding-left: 5%;"><img src="IMG/bg2.svg" alt=""></div>
-            <div class="descricao">
-                <p class="container-title">Trabalho organizado é trabalho otimizado!</p>
-                <div class="line"></div>
-                <div class="s2-line"></div>
-                <p class="container-text">
-                    A nova jornada de trabalho exige novos hábitos e um controle melhor na disciplina de horários e
-                    demandas. Com a gente você cria, gerencia e executa todo o seu fluxo de trabalho junto ao de toda a
-                    sua equipe, principalmente em home office.
-                </p>
+        </section>
+
+        <section id="s1-responsive"> <!-- sessao mobile -->
+            <div class="container" id="c1">
+                <div class="s1-b1">
+                    <p>Crie e gerencie seu fluxo de trabalho no home office com o WorkUs</p>
+                    <div class="s1-b2"><img src="IMG/bg 1.svg" alt=""></div>
+                    <a href="#">Crie sua conta grátis</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="s3">
-        <div class="container" id="c3">
-            <div class="s3-b1"><img src="IMG/bg3.svg" alt=""></div>
-            <div class="s3-b2">
-                <p class="container-title">O que é o WorkUs?</p>
-                <div class="line"></div>
-                <p class="container-text">Somos uma plataforma 100% online de gerenciamento de demandas, gestão de fluxo
-                    de trabalho,
-                    processos e tempo. Não precisa mais marcar uma reunião que poderia ser um email com a sua equipe.
-                    Basta subir uma demanda, linkar aos responsáveis e colocar o prazo de entrega.
-                    Depois é só dar o feedback na plataforma mesmo. Simples, né? Nós queremos simplificar a sua rotina
-                    de
-                    home office!
-                </p>
-                <a href="#">Faça um teste grátis</a>
+        </section>
+
+        <section id="s2">
+            <div class="container" id="c2">
+                <div class="s2-b2" style="padding-left: 5%;"><img src="IMG/bg2.svg" alt=""></div>
+                <div class="descricao">
+                    <p class="container-title">Trabalho organizado é trabalho otimizado!</p>
+                    <div class="line"></div>
+                    <p class="container-text">
+                        A nova jornada de trabalho exige novos hábitos e um controle melhor na disciplina de horários e
+                        demandas. Com a gente você cria, gerencia e executa todo o seu fluxo de trabalho junto ao de
+                        toda a
+                        sua equipe, principalmente em home office.
+                    </p>
+                </div>
             </div>
-            <div class="s3-b3"><img src="IMG/bg4.svg" alt=""></div>
-        </div>
-    </section>
-    <section id="s4">
-        <div class="container" id="c4">
-            <div class="s4-b1">
-                <div class="s4-b1-blocos">
-                    <div class="s4-b1-blocos-b1"><img src="IMG/bg5.svg" alt=""></div>
-                    <div class="s4-b1-blocos-b2">
+        </section>
+
+        <section id="s3">
+            <div class="container" id="c3">
+                <div class="s3-b1"><img src="IMG/bg3.svg" alt=""></div>
+                <div class="s3-b2">
+                    <p class="container-title">O que é o WorkUs?</p>
+                    <div class="line"></div>
+                    <p class="container-text">Somos uma plataforma 100% online de gerenciamento de demandas, gestão de
+                        fluxo
+                        de trabalho,
+                        processos e tempo. Não precisa mais marcar uma reunião que poderia ser um email com a sua
+                        equipe.
+                        Basta subir uma demanda, linkar aos responsáveis e colocar o prazo de entrega.
+                        Depois é só dar o feedback na plataforma mesmo. Simples, né? Nós queremos simplificar a sua
+                        rotina
+                        de
+                        home office!
+                    </p>
+                    <a href="#">Faça um teste grátis</a>
+                </div>
+                <div class="s3-b3"><img src="IMG/bg4.svg" alt=""></div>
+            </div>
+        </section>
+
+        <section id="s4"> 
+            <div class="container" id="c4">
+                <div class="carousel">
+                  <div class="slide">
+                    <div class="s4-b1-blocos">
+                      <div class="s4-b1-blocos-b1"><img src="IMG/bg5.svg" alt=""></div>
+                      <div class="s4-b1-blocos-b2">
                         <p>Pacotes do tamanho da sua equipe!</p>
                         <div class="s4-line"></div>
-                    </div>
-                    <div class="s4-b1-blocos-b3">
+                      </div>
+                      <div class="s4-b1-blocos-b3">
                         <p>Pague apenas pelo número de usuários dentro da sua necessidade.</p>
+                      </div>
                     </div>
-                </div>
-                <div class="s4-b1-blocos">
-                    <div class="s4-b1-blocos-b1"><img src="IMG/bg6.svg" alt=""></div>
-                    <div class="s4-b1-blocos-b2">
+                  </div>
+                  <div class="slide">
+                    <div class="s4-b1-blocos">
+                      <div class="s4-b1-blocos-b1"><img src="IMG/bg6.svg" alt=""></div>
+                      <div class="s4-b1-blocos-b2">
                         <p>Integração com Google Business</p>
                         <div class="s4-line"></div>
-                    </div>
-                    <div class="s4-b1-blocos-b3">
+                      </div>
+                      <div class="s4-b1-blocos-b3">
                         <p>Tudo salvo na nuvem do seu email corporativo</p>
+                      </div>
                     </div>
-                </div>
-                <div class="s4-b1-blocos">
-                    <div class="s4-b1-blocos-b1"><img src="IMG/bg7.svg" alt=""></div>
-                    <div class="s4-b1-blocos-b2">
+                  </div>
+                  <div class="slide">
+                    <div class="s4-b1-blocos">
+                      <div class="s4-b1-blocos-b1"><img src="IMG/bg7.svg" alt=""></div>
+                      <div class="s4-b1-blocos-b2">
                         <p>Suporte 24h com atendentes reais</p>
                         <div class="s4-line"></div>
-                    </div>
-                    <div class="s4-b1-blocos-b3">
+                      </div>
+                      <div class="s4-b1-blocos-b3">
                         <p>Pintou uma dúvida? Chama a gente! E não somos robôs.</p>
+                      </div>
                     </div>
-                </div>
-                <div class="s4-b1-blocos">
-                    <div class="s4-b1-blocos-b1"><img src="IMG/bg8.svg" alt=""></div>
-                    <div class="s4-b1-blocos-b2">
+                  </div>
+                  <div class="slide">
+                    <div class="s4-b1-blocos">
+                      <div class="s4-b1-blocos-b1"><img src="IMG/bg8.svg" alt=""></div>
+                      <div class="s4-b1-blocos-b2">
                         <p>Ilimitado</p>
                         <div class="s4-line"></div>
-                    </div>
-                    <div class="s4-b1-blocos-b3">
+                      </div>
+                      <div class="s4-b1-blocos-b3">
                         <p>Tem 2, 20, 200 pessoas na sua equipe? Nosso sistema suporta qualquer número!</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="s5" style="display: flex; flex-direction: column;">
-        <div class="container" id="c5">
-            <div class="s1-b1"><img src="IMG/bg9.svg" alt=""></div>
-            <div class="s5-b2">
-                <div class="s5-b1">
-                    <p class="s5-title">O que falam da WorkUs</p>
-                    <div class="s5-b1-blocos-b2">
-                        <div class="s5-b1-blocos-b2-foto"><img src="IMG/bg11.svg" alt=""></div>
-                        <div class="s5-b1-blocos-b2-desc">
-                            <p class="name">Luiz Lima</p>
-                            <p class="desc">Ótimo, sempre precisei me organizar melhor e a WorkUs facilitou bastante!
-                            </p>
+              </div>
+        </section>
+
+
+
+        <section id="s5" style="display: flex; flex-direction: column;">
+            <div class="container" id="c5">
+                <div class="s1-b1"><img src="IMG/bg9.svg" alt=""></div>
+                <div class="s5-b2">
+                    <div class="s5-b1">
+                        <p class="s5-title">O que falam da WorkUs</p>
+                        <div class="s5-b1-blocos-b2">
+                            <div class="s5-b1-blocos-b2-foto"><img src="IMG/bg11.svg" alt=""></div>
+                            <div class="s5-b1-blocos-b2-desc">
+                                <p class="name">Luiz Lima</p>
+                                <p class="desc">Ótimo, sempre precisei me organizar melhor e a WorkUs facilitou
+                                    bastante!
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="s5-b1-blocos-b3"></div>
                 </div>
             </div>
-        </div>
-        <div class="creditos">
-            <div class="cred-text">
-                <p class="animated-text">Desenvolvido por Nilton Pires e Matheus Almeida</p>
+            <div class="creditos">
+                <div class="cred-text">
+                    <p class="animated-text">Desenvolvido por Nilton Pires e Matheus Almeida</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
+
     <script src="script.js"></script>
     <script src="animation.js"></script>
 </body>
